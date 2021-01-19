@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Library</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Library.css">
+    </head>
+    <body>
+        <header>Your Personal Library<hr></header>
+        <div class="darkMode">
+            <div class="darkMode"id="icon" onclick="updateTheme()"></div>
+            <p id="iconText">Dark mode</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>New Book</legend>
+                <label>Title:</label>
+                <input type="text" name="Title">
+                <label>Author:</label>
+                <input type="text" name="Author">
+                <label>Pages:</label>
+                <input type="number" min="0" name="Pages">
+                <label>Read:</label>
+                <select name="Read">
+                    <option value="Read">Read</option>
+                    <option value="Not read">Not read</option>
+                </select>
+                <button id="addBook" onclick="newBook()">Add Book</button>
+            </fieldset>
+        </form>
+        <br><br>
+        <div class="wrapper" id="container">
+            <div class="new-book" id="test">test</div>
+            <div class="new-book">test2</div>
+        </div>
+        
+
+        <script src="Library.js"></script>
+    </body>
+</html>
