@@ -2,10 +2,10 @@
 /* Header */
 header{
     position: relative;
+    margin: 40px;
     font-size: 34px;
     font-weight: bold;
     text-align: center;
-    margin: 40px;
 }
 hr{
     height: 4px; 
@@ -14,58 +14,61 @@ hr{
 
 /* Books */
 #container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 200px));
-    background-color: rgba(0, 128, 128, 0.274);
-    width: 1200px;
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto;
-    border-radius: 1%;
+    width: 95%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 128, 128, 0.274);
     box-shadow: 0px 0px 20px 20px rgba(0, 128, 128, 0.274);
+    border-radius: 1%;
 }
 .new-book{
+    margin: 20px;
+    width: 345px;
+    height: 200px;
+    padding: 15px;
     background-color: rgba(64, 93, 224, 0.363);
     border-radius: 2%;
-    margin: 4%;
-    padding: 10px;
     font-size: 24px;
 }
 
 /* Buttons */
 .darkMode{
-    background-color: rgb(31, 30, 39);
     position: absolute;
     top: 20px;
     right: 20px;
     width: 40px;
     height: 40px;
+    background-color: rgb(31, 30, 39);
     border-radius: 80%;
 }            
 #icon{
     position: absolute;
-    background-color: rgb(31, 30, 39);
-    border-radius: 100%;
-    box-shadow: 15px -5px white inset;
+    right: 5px;
+    top: 5px; 
     width: 30px;
     height: 30px;
-    right: 5px;
-    top: 5px;
+    background-color: rgb(31, 30, 39);
+    box-shadow: 15px -5px white inset;
+    border-radius: 100%;
 }
 #iconText{
     position: absolute;
-    text-align: left;
-    width: 80px;
     top: 30px;
     left: -18px;
+    width: 80px;
+    text-align: left;
 }
 
 /* Form to add a new book */
 fieldset{
-    font-size: 24px;
     margin: auto;
     margin-top: -30px;
     max-width: 1000px;
+    font-size: 24px;
 } 
 @media only screen and (max-width:1080px){
     fieldset{width: 100px;}

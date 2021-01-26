@@ -15,21 +15,21 @@
             <fieldset>
                 <legend>New Book</legend>
                 <label>Title:</label>
-                <input type="text" name="Title">
+                <input type="text" id="title">
                 <label>Author:</label>
-                <input type="text" name="Author">
+                <input type="text" id="author">
                 <label>Pages:</label>
-                <input type="number" min="0" name="Pages">
+                <input type="number" min="0" id="pages">
                 <label>Read:</label>
-                <select name="Read">
-                    <option value="Read">Read</option>
-                    <option value="Not read">Not read</option>
+                <select id="read">
+                    <option value="read">Read</option>
+                    <option value="not read">Not read</option>
                 </select>
-                <button id="addBook" onclick="newBook()">Add Book</button>
+                <button id="addBook" type="button" onclick="newBook()">Add Book</button>
             </fieldset>
         </form>
         <br><br>
-        <div class="wrapper" id="container">
+        <div id="container">
             <div class="new-book" id="test">test</div>
             <div class="new-book">test2</div>
         </div>

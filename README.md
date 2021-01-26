@@ -1,1 +1,1 @@
-Still a work in progress you will eventually be able to add books to your library.
+You can add books to your library.
