@@ -1,9 +1,9 @@
     //setup for library books
 function Book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
     this.info = function() {
         return [title, author, pages, read];
     };
@@ -52,7 +52,6 @@ function addbook() {for (i = 0; i < bookCount; i++) {
     };
 };
 window.addEventListener('load', addbook());
-
 
     //change theme
 function theme(bgColor, textColor) {

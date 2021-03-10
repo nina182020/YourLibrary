@@ -1,6 +1,6 @@
 
-/* Header */
-header{
+    /* Header */
+header {
     position: relative;
     margin: 40px;
     font-size: 34px;
@@ -12,8 +12,8 @@ hr{
     background-color: rgb(75, 70, 117);
 }
 
-/* Books */
-#container{
+    /* Books */
+#container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -25,7 +25,7 @@ hr{
     box-shadow: 0px 0px 20px 20px rgba(0, 128, 128, 0.274);
     border-radius: 1%;
 }
-.new-book{
+.new-book {
     margin: 20px;
     width: 345px;
     height: 200px;
@@ -35,8 +35,19 @@ hr{
     font-size: 24px;
 }
 
-/* Buttons */
-.darkMode{
+    /* Form to add a new book */
+fieldset {
+    margin: auto;
+    margin-top: -30px;
+    max-width: 1000px;
+    font-size: 24px;
+} 
+@media only screen and (max-width:1080px){
+    fieldset{width: 100px;}
+}
+
+    /* Buttons */
+.darkMode {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -45,7 +56,7 @@ hr{
     background-color: rgb(31, 30, 39);
     border-radius: 80%;
 }            
-#icon{
+#icon {
     position: absolute;
     right: 5px;
     top: 5px; 
@@ -55,7 +66,7 @@ hr{
     box-shadow: 15px -5px white inset;
     border-radius: 100%;
 }
-#iconText{
+#iconText {
     position: absolute;
     top: 30px;
     left: -18px;
@@ -63,13 +74,3 @@ hr{
     text-align: left;
 }
 
-/* Form to add a new book */
-fieldset{
-    margin: auto;
-    margin-top: -30px;
-    max-width: 1000px;
-    font-size: 24px;
-} 
-@media only screen and (max-width:1080px){
-    fieldset{width: 100px;}
-}
